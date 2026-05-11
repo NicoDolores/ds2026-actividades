@@ -1,0 +1,89 @@
+/* Variables CSS */
+:root {
+  --color-primario: #2c3e50;
+  --color-secundario: #2980b9;
+  --color-fondo: #f5f5f5;
+  --color-texto: #333333;
+  --color-blanco: #ffffff;
+  --fuente-principal: Arial, sans-serif;
+  --borde-radio: 8px;
+  --sombra: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --espaciado: 20px;
+}
+
+/* Reset global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: var(--fuente-principal);
+  line-height: 1.6;
+  padding: var(--espaciado);
+}
+
+/* Header */
+h1 {
+  color: var(--color-primario);
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: var(--color-secundario);
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: var(--color-primario);
+  margin-bottom: 8px;
+}
+
+/* Navbar con Flexbox */
+nav {
+  background-color: var(--color-primario);
+  border-radius: var(--borde-radio);
+  padding: 10px var(--espaciado);
+  margin-bottom: var(--espaciado);
+  box-shadow: var(--sombra);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: var(--color-blanco);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Contenedor principal con Flexbox */
+.contenido {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaciado);
+}
+
+/* Secciones */
+.seccion {
+  background-color: var(--color-blanco);
+  border-radius: var(--borde-radio);
+  box-shadow: var(--sombra);
+  padding: var(--espaciado);
+}
+
+/* Links */
+a {
+  color: var(--color-secundario);
+}
